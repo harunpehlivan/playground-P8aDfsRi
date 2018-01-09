@@ -1,7 +1,7 @@
 title: C# Professional - Collections - Exercises
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
+- title: Collections
+  statement: markdowns/Collections.md
 projects:
   csharp:
     root: /src/Collections
