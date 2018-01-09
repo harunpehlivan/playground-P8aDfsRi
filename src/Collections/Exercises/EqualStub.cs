@@ -2,21 +2,22 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+// }
 
 namespace Answer
 {
-    // }
     internal class Employee : IEquatable<Employee>
     {
         public int Id;
         public string Name;
 
+        // FIX IT, tips: use "this" and "other" object to code it
         public bool Equals(Employee other)
         {
-            return false; // FIX IT "this" and "other" variable
+            return false; 
         }
     }
-    // { autofold
+    
     public class EqualStub
     {
         public static bool IsEqual()
