@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Answer
+namespace Results
 {
     // }
     internal class Employee : IEquatable<Employee>
@@ -13,7 +13,7 @@ namespace Answer
 
         public bool Equals(Employee other)
         {
-            return false; // FIX IT "this" and "other" variable
+            return (this.Id == other.Id && this.Name == other.Name);
         }
     }
     // { autofold

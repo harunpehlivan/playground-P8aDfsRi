@@ -2,11 +2,7 @@
 Using IEquatable Interface
 
 The IEquatable interface is used to compare two objects by providing the Equals method. It is similar to the Equals method of the Object class (that we have discussed in the preceding), the only difference between the two is that the Equals method of The IEquatable interface is a generic method and it avoids the boxing and unboxing of objects that improves the performance.
-# Sample - IEquatable&lt;T&gt;
 @[IEquatable&lt;T&gt; by sample]({"stubs": ["Exercises/EqualStub.cs"],"command": "TechIo.EqualTest.VerifyEquality"})
-
-
-Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/csharp-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
 
 # Template Resources
 
