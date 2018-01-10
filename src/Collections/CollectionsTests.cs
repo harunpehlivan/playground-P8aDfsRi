@@ -1,23 +1,38 @@
-﻿using Answer;
+﻿using Collections.Exercises;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Linq;
+using System.Collections.Generic;
 using System.IO;
+using static Collections.Exercises.DictionaryStub;
 
 namespace TechIo
 {
     [TestClass]
-    public class EqualTest
+    public class CollectionsTests
     {
         private bool shouldShowHint = false;
         [TestMethod]
-        public void VerifyEquality()
+        public void VerifyCountNames()
+        {
+            shouldShowHint = false;
+            var r = ListStubs.GetListNames();
+            Assert.Equals(2, r.Count);
+        }
+        [TestMethod]
+        public void VerifyCountByAges()
         {
             shouldShowHint = true;
-            Assert.IsFalse(EqualStub.IsEqual());
+            List<Employee> employees = new List<Employee>() {
+                new Employee("Anna",32),
+                new Employee("John",23),
+                new Employee("Sarah",23),
+                new Employee("Mike",32)
+            };
+
+            var r = DictionaryStub.GetEmployeesByAge(employees);
+            Assert.Equals(true, r.ContainsKey(32) && r.ContainsKey(23) && r[32].Count == 2 && r[23].Count == 2);
             shouldShowHint = false;
         }
-
         [TestCleanup()]
         public void Cleanup()
         {
