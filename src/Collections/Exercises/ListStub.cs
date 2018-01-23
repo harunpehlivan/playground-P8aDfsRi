@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Collections.Exercises
 {
-    public class ListStubs
+    public class ListStub
     {
         public static List<string> ProcessToKill(List<string> process)
         {

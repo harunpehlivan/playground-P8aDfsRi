@@ -15,7 +15,7 @@ namespace TechIo
         public void VerifyProcessToKill()
         {
             shouldShowHint = false;
-            var r = ListStubs.ProcessToKill(new List<string>() { "Explorer.exe", "Teams.exe", "VisualStudio.exe" });
+            var r = ListStub.ProcessToKill(new List<string>() { "Explorer.exe", "Teams.exe", "VisualStudio.exe" });
             Assert.AreEqual(true, !r.Contains("Explorer.exe") && r.Count == 2);
         }
         [TestMethod]
