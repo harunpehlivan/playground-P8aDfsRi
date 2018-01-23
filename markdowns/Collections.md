@@ -8,9 +8,10 @@ Where "T" generic parameter you can pass any data-type or custom class object to
 
 @[Exercice]({"stubs": ["Exercises/ListStub.cs"],"command": "TechIo.EqualTest.VerifyProcessToKill"})
 
-::: Solution
+:::Solution
 Replace **TODO** by this code:
 
+`
     foreach (var user in users)
     {
         if (!user.Equals("Tim"))
@@ -18,6 +19,7 @@ Replace **TODO** by this code:
             names.Add(user);
         }
     }
+`
 :::
 
 # Dictionary
@@ -46,9 +48,9 @@ A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
 `Stack obj = new Stack();`
 
 ```C# runnable
-using System.Collections;
+
 // Creates and initializes a new Stack.
-Stack myStack = new Stack();
+var myStack = new System.Collections.Stack();
 myStack.Push("Hello");
 myStack.Push("World");
 myStack.Push("!");
@@ -68,7 +70,7 @@ A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 ```C# runnable
 using System.Collections;
 // Creates and initializes a new Queue.
-Queue myQ = new Queue();
+Queue myQ = new System.Collections.Queue();
 myQ.Push("Hello");
 myQ.Push("World");
 myQ.Push("!");
