@@ -47,7 +47,18 @@ A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
 
 `Stack obj = new Stack();`
 
-@[Sample]({"stubs": "Samples/StackSample.cs"})
+```C# runnable
+// Creates and initializes a new Stack.
+Stack myStack = new Stack();
+myStack.Push("Hello");
+myStack.Push("World");
+myStack.Push("!");
+
+foreach (Object obj in myStack)
+{
+    Console.Write("    {0}", obj);
+}
+```
 ## Queue
 A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 
@@ -55,4 +66,15 @@ A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 
 `Queue obj = new Queue();`
 
-@[Sample]({"stubs": "Samples/QueueSample.cs"})
+```C# runnable
+// Creates and initializes a new Stack.
+Queue myQ = new Queue();
+myQ.Push("Hello");
+myQ.Push("World");
+myQ.Push("!");
+
+foreach (Object obj in myQ)
+{
+    Console.Write("    {0}", obj);
+}
+```
