@@ -4,10 +4,41 @@
 `List<T> obj = new List<T>();`
 Where "T" generic parameter you can pass any data-type or custom class object to this parameter.
 
-@[Exercice]({"stubs": ["Exercises/DictionaryStub.cs"],"command": "TechIo.EqualTest.VerifyEquality"})
+@[Exercice]({"stubs": ["Exercises/ListStub.cs"],"command": "TechIo.EqualTest.VerifyCountFirstNames"})
 
 ::: Solution
-Change line **16** by this code: `return (this.Id == other.Id && this.Name == other.Name);`
+To add users to list name you can use this code: 
+`
+            foreach(var user in users)
+            {
+                names.Add(user);
+            }
+`
+or 
+`
+            firstNameList.AddRange(users);
+`
+This code can be use to remove "Tim" user: 
+`
+            if (names.Remove("Tim"))
+            {
+                Console.WriteLine("Tim has been deleted.");
+            }
+            else
+            {
+                Console.WriteLine("Tim hasn't been deleted.");
+            }
+`
+You can combine actions by use this code:
+             `
+            foreach (var user in users)
+            {
+                if (!user.Equals("Tim"))
+                {
+                    names.Add(user);
+                }
+            }
+`
 :::
 
 # Dictionary

@@ -12,16 +12,16 @@ namespace TechIo
     {
         private bool shouldShowHint = false;
         [TestMethod]
-        public void VerifyCountNames()
+        public void VerifyCountFirstNames()
         {
             shouldShowHint = false;
-            var r = ListStubs.GetListNames();
-            Assert.Equals(2, r.Count);
+            var r = ListStubs.FirstNames(new List<string>() { "Matt", "Tim", "James" });
+            Assert.AreEqual(true, !r.Exists(s => s.Equals("Tim")) && r.Count == 2);
         }
         [TestMethod]
         public void VerifyCountByAges()
         {
-            shouldShowHint = true;
+            shouldShowHint = false;
             List<Employee> employees = new List<Employee>() {
                 new Employee("Anna",32),
                 new Employee("John",23),
@@ -30,7 +30,7 @@ namespace TechIo
             };
 
             var r = DictionaryStub.GetEmployeesByAge(employees);
-            Assert.Equals(true, r.ContainsKey(32) && r.ContainsKey(23) && r[32].Count == 2 && r[23].Count == 2);
+            Assert.AreEqual(true, r.ContainsKey(32) && r.ContainsKey(23) && r[32].Count == 2 && r[23].Count == 2);
             shouldShowHint = false;
         }
         [TestCleanup()]
@@ -44,23 +44,23 @@ namespace TechIo
             else
             {
                 // On success
-                if (ExistsInFile(@"/project/target/Exercises/UniverseStub.cs", "galaxies.Sum();"))
-                {
-                    PrintMessage("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
-                    PrintMessage("My personal Yoda, you are. 🙏", "           　★ °  ☆ ¸. ¸ 　★　 :.　 .   ");
-                    PrintMessage("My personal Yoda, you are. 🙏", "__.-._     ° . .　　　　.　☾ ° 　. *   ¸ .");
-                    PrintMessage("My personal Yoda, you are. 🙏", "'-._\\7'      .　　° ☾  ° 　¸.☆  ● .　　　");
-                    PrintMessage("My personal Yoda, you are. 🙏", " /'.-c    　   * ●  ¸.　　°     ° 　¸.    ");
-                    PrintMessage("My personal Yoda, you are. 🙏", " |  /T      　　°     ° 　¸.     ¸ .　　  ");
-                    PrintMessage("My personal Yoda, you are. 🙏", "_)_/LI");
-                }
-                else
-                {
-                    PrintMessage("Kudos 🌟", "Using Linq, your code could have been shorter. Try it!");
-                    PrintMessage("Kudos 🌟", "");
-                    PrintMessage("Kudos 🌟", "int[] galaxies = {37, 3, 2};");
-                    PrintMessage("Kudos 🌟", "int totalStars = galaxies.Sum(); // 42");
-                }
+                //if (ExistsInFile(@"/project/target/Exercises/ListStubs.cs", "galaxies.Sum();"))
+                //{
+                //    PrintMessage("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
+                //    PrintMessage("My personal Yoda, you are. 🙏", "           　★ °  ☆ ¸. ¸ 　★　 :.　 .   ");
+                //    PrintMessage("My personal Yoda, you are. 🙏", "__.-._     ° . .　　　　.　☾ ° 　. *   ¸ .");
+                //    PrintMessage("My personal Yoda, you are. 🙏", "'-._\\7'      .　　° ☾  ° 　¸.☆  ● .　　　");
+                //    PrintMessage("My personal Yoda, you are. 🙏", " /'.-c    　   * ●  ¸.　　°     ° 　¸.    ");
+                //    PrintMessage("My personal Yoda, you are. 🙏", " |  /T      　　°     ° 　¸.     ¸ .　　  ");
+                //    PrintMessage("My personal Yoda, you are. 🙏", "_)_/LI");
+                //}
+                //else
+                //{
+                //    PrintMessage("Kudos 🌟", "Using Linq, your code could have been shorter. Try it!");
+                //    PrintMessage("Kudos 🌟", "");
+                //    PrintMessage("Kudos 🌟", "int[] galaxies = {37, 3, 2};");
+                //    PrintMessage("Kudos 🌟", "int totalStars = galaxies.Sum(); // 42");
+                //}
             }
         }
 
