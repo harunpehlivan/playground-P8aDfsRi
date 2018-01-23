@@ -60,9 +60,9 @@ namespace Collections.Samples
         {
             // Creates and initializes a new Queue.
             Stack myStack = new Stack();
-            myStack.Enqueue("Hello");
-            myStack.Enqueue("World");
-            myStack.Enqueue("!");
+            myStack.Push("Hello");
+            myStack.Push("World");
+            myStack.Push("!");
 
             // Displays the properties and values of the Queue.
             Console.WriteLine("myStack");
