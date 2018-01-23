@@ -17,6 +17,7 @@ namespace TechIo
             shouldShowHint = false;
             var r = ListStub.ProcessToKill(new List<string>() { "Explorer.exe", "Teams.exe", "VisualStudio.exe" });
             Assert.AreEqual(true, !r.Contains("Explorer.exe") && r.Count == 2);
+            shouldShowHint = false;
         }
         [TestMethod]
         public void VerifyCountByAges()

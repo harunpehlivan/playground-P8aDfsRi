@@ -6,19 +6,13 @@
 
 Where "T" generic parameter you can pass any data-type or custom class object to this parameter.
 
-@[Exercice]({"stubs": ["Exercises/ListStub.cs"],"command": "TechIo.EqualTest.VerifyProcessToKill"})
+@[Exercice]({"stubs": ["Exercises/ListStub.cs"],"command": "TechIo.CollectionsTests.VerifyProcessToKill"})
 
 :::Solution
 Replace **TODO** by this code:
 
 `
-    foreach (var user in users)
-    {
-        if (!user.Equals("Tim"))
-        {
-            names.Add(user);
-        }
-    }
+foreach (var p in process) { if (!p.Equals("Explorer.exe")) { processToKill.Add(p); } }
 `
 :::
 
@@ -31,7 +25,7 @@ Dictionary is a generic collections which works on key and value pairs. Both key
 
 Where "T" generic parameter you can pass any data-type or custom class object to this parameter.
 
-@[Exercice]({"stubs": ["Exercises/DictionaryStub.cs"],"command": "TechIo.EqualTest.VerifyCountByAges"})
+@[Exercice]({"stubs": ["Exercises/DictionaryStub.cs"],"command": "TechIo.CollectionsTests.VerifyCountByAges"})
 
 ::: Solution
 Replace **TODO** by this code: 
