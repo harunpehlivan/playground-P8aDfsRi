@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Collections.Exercises
+namespace Collections.Samples
 {
     public class QueueSample
     {

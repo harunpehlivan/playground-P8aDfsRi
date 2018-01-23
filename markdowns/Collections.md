@@ -47,7 +47,7 @@ A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
 
 `Stack obj = new Stack();`
 
-@[Sample]({"stubs": ["Samples/StackSample.cs"],"command": ""})
+@[Sample]({"command": "Collections.Samples.StackSample.Sample"})
 ## Queue
 A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 
@@ -55,4 +55,4 @@ A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 
 `Queue obj = new Queue();`
 
-@[Sample]({"stubs": ["Samples/QueueSample.cs"],"command": ""})
+@[Sample]({"command": "Collections.Samples.QueueSample.Sample"})
