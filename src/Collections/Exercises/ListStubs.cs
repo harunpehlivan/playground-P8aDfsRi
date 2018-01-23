@@ -6,28 +6,28 @@ namespace Collections.Exercises
 {
     public class ListStubs
     {
-        public static List<string> FirstNames(List<string> users)
+        public static List<string> ProcessToKill(List<string> process)
         {
             // Create list of string with initial size to 3.
-            List<string> names = new List<string>(3);
+            List<string> processToKill = new List<string>(3);
 
             // Show capacity ; here : 3.
-            Console.WriteLine(string.Format("Capacity {0}", names.Capacity));
+            Console.WriteLine(string.Format("Capacity {0}", processToKill.Capacity));
 
             // Show number of items ; here : 0.
-            Console.WriteLine(string.Format("Count {0}", names.Count));
+            Console.WriteLine(string.Format("Count {0}", processToKill.Count));
 
             /// TODO: 
-            /// Add items from users to "names" list 
-            /// User equals "Tim" don't need to add, ignore it
-            
+            /// Add items from process to processToKill list 
+            /// Process equals "Explorer.exe" don't be added, ignore it
 
-            foreach (var firstname in names)
+
+            foreach (var p in processToKill)
             {
-                Console.WriteLine(firstname);
+                Console.WriteLine(p);
             }           
 
-            return names;
+            return processToKill;
         }
     }
 }

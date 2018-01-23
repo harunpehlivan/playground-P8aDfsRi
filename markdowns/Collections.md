@@ -7,29 +7,7 @@ Where "T" generic parameter you can pass any data-type or custom class object to
 @[Exercice]({"stubs": ["Exercises/ListStub.cs"],"command": "TechIo.EqualTest.VerifyCountFirstNames"})
 
 ::: Solution
-To add users to list name you can use this code: 
-`
-            foreach(var user in users)
-            {
-                names.Add(user);
-            }
-`
-or 
-`
-            firstNameList.AddRange(users);
-`
-This code can be use to remove "Tim" user: 
-`
-            if (names.Remove("Tim"))
-            {
-                Console.WriteLine("Tim has been deleted.");
-            }
-            else
-            {
-                Console.WriteLine("Tim hasn't been deleted.");
-            }
-`
-You can combine actions by use this code:
+Replace **TODO** by this code:
              `
             foreach (var user in users)
             {
@@ -51,5 +29,13 @@ Where "T" generic parameter you can pass any data-type or custom class object to
 @[Exercice]({"stubs": ["Exercises/DictionaryStub.cs"],"command": "TechIo.EqualTest.VerifyEquality"})
 
 ::: Solution
-Change line **16** by this code: `return (this.Id == other.Id && this.Name == other.Name);`
+Replace **TODO** by this code: `return (this.Id == other.Id && this.Name == other.Name);`
 :::
+
+# LIFO vs FIFO
+## Stack
+A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
+@[Exercice]({"stubs": ["Exercises/StackStub.cs"],"command": ""})
+## Queue
+A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
+@[Exercice]({"stubs": ["Exercises/StackStub.cs"],"command": ""})

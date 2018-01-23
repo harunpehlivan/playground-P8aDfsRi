@@ -15,8 +15,8 @@ namespace TechIo
         public void VerifyCountFirstNames()
         {
             shouldShowHint = false;
-            var r = ListStubs.FirstNames(new List<string>() { "Matt", "Tim", "James" });
-            Assert.AreEqual(true, !r.Exists(s => s.Equals("Tim")) && r.Count == 2);
+            var r = ListStubs.ProcessToKill(new List<string>() { "Explorer.exe", "Teams.exe", "VisualStudio.exe" });
+            Assert.AreEqual(true, !r.Contains("Explorer.exe") && r.Count == 2);
         }
         [TestMethod]
         public void VerifyCountByAges()
@@ -33,6 +33,8 @@ namespace TechIo
             Assert.AreEqual(true, r.ContainsKey(32) && r.ContainsKey(23) && r[32].Count == 2 && r[23].Count == 2);
             shouldShowHint = false;
         }
+
+
         [TestCleanup()]
         public void Cleanup()
         {
