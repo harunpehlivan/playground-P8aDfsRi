@@ -4,7 +4,7 @@
 `List<T> obj = new List<T>();`
 Where "T" generic parameter you can pass any data-type or custom class object to this parameter.
 
-@[Exercice]({"stubs": ["Exercises/ListStub.cs"],"command": "TechIo.EqualTest.VerifyCountFirstNames"})
+@[Exercice]({"stubs": ["Exercises/ListStub.cs"],"command": "TechIo.EqualTest.VerifyProcessToKill"})
 
 ::: Solution
 Replace **TODO** by this code:
@@ -26,7 +26,7 @@ Replace **TODO** by this code:
 `Dictionary<T, T> obj = new Dictionary<T, T>();`
 Where "T" generic parameter you can pass any data-type or custom class object to this parameter.
 
-@[Exercice]({"stubs": ["Exercises/DictionaryStub.cs"],"command": "TechIo.EqualTest.VerifyEquality"})
+@[Exercice]({"stubs": ["Exercises/DictionaryStub.cs"],"command": "TechIo.EqualTest.VerifyCountByAges"})
 
 ::: Solution
 Replace **TODO** by this code: `return (this.Id == other.Id && this.Name == other.Name);`
@@ -35,7 +35,11 @@ Replace **TODO** by this code: `return (this.Id == other.Id && this.Name == othe
 # LIFO vs FIFO
 ## Stack
 A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
-@[Exercice]({"stubs": ["Exercises/StackStub.cs"],"command": ""})
+**Syntax**
+`Stack obj = new Stack();`
+@[Sample]({"stubs": ["Samples/StackSample.cs"],"command": ""})
 ## Queue
 A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
-@[Exercice]({"stubs": ["Exercises/StackStub.cs"],"command": ""})
+**Syntax**
+`Queue obj = new Queue();`
+@[Sample]({"stubs": ["Samples/QueueSample.cs"],"command": ""})

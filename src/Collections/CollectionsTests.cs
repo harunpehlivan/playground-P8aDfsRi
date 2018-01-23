@@ -12,7 +12,7 @@ namespace TechIo
     {
         private bool shouldShowHint = false;
         [TestMethod]
-        public void VerifyCountFirstNames()
+        public void VerifyProcessToKill()
         {
             shouldShowHint = false;
             var r = ListStubs.ProcessToKill(new List<string>() { "Explorer.exe", "Teams.exe", "VisualStudio.exe" });
