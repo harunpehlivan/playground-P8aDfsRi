@@ -10,7 +10,6 @@ Where "T" generic parameter you can pass any data-type or custom class object to
 
 ::: Solution
 Replace **TODO** by this code:
-`
 
     foreach (var user in users)
     {
@@ -19,7 +18,6 @@ Replace **TODO** by this code:
             names.Add(user);
         }
     }
-`
 :::
 
 # Dictionary
@@ -48,6 +46,7 @@ A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
 `Stack obj = new Stack();`
 
 ```C# runnable
+using System.Collections;
 // Creates and initializes a new Stack.
 Stack myStack = new Stack();
 myStack.Push("Hello");
@@ -67,7 +66,8 @@ A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 `Queue obj = new Queue();`
 
 ```C# runnable
-// Creates and initializes a new Stack.
+using System.Collections;
+// Creates and initializes a new Queue.
 Queue myQ = new Queue();
 myQ.Push("Hello");
 myQ.Push("World");
