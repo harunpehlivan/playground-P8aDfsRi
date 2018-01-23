@@ -29,8 +29,16 @@ Where "T" generic parameter you can pass any data-type or custom class object to
 
 ::: Solution
 Replace **TODO** by this code: 
-
-`return (this.Id == other.Id && this.Name == other.Name);`
+`
+    if(result.ContainsKey(e.Age))
+    {
+            result[e.Age].Add(e.Name);
+    }
+    else
+    {
+        result.Add(e.Age, new List<string>() { e.Name });
+    }
+`
 :::
 
 # LIFO vs FIFO
