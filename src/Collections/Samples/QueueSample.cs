@@ -5,7 +5,6 @@ namespace Collections.Samples
 {
     public class QueueSample
     {
-
         public static void Sample()
         {
             // Creates and initializes a new Queue.

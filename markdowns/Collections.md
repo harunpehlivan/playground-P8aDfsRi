@@ -51,35 +51,27 @@ A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
 
 ```C# runnable
 using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace Collections.Samples
 {
-    public class Program
+    public class StackSample
     {
-
         public static void Main()
         {
-            // Creates and initializes a new Queue.
-            Stack myStack = new Stack();
+            // Creates and initializes a new Stack.
+            Stack<string> myStack = new Stack<string>();
             myStack.Push("Hello");
             myStack.Push("World");
             myStack.Push("!");
 
-            // Displays the properties and values of the Queue.
-            Console.WriteLine("myStack");
+            // Displays the properties and values of the Stack.
             Console.WriteLine("\tCount:    {0}", myStack.Count);
             Console.Write("\tValues:");
-            PrintValues(myStack);
-        }
-
-        private static void PrintValues(IEnumerable myCollection)
-        {
-            foreach (Object obj in myCollection)
+            foreach (var item in myStack)
             {
-                Console.Write("    {0}", obj);
+                Console.Write("    {0}", item);
             }
-            Console.WriteLine();
         }
     }
 }
@@ -93,35 +85,27 @@ A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 
 ```C# runnable
 using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace Collections.Samples
 {
-    public class Program
+    public class QueueSample
     {
-
-        public static void Main()
+        public static void Sample()
         {
             // Creates and initializes a new Queue.
-            Queue myQ = new Queue();
+            Queue<string> myQ = new Queue<string>();
             myQ.Enqueue("Hello");
             myQ.Enqueue("World");
             myQ.Enqueue("!");
 
             // Displays the properties and values of the Queue.
-            Console.WriteLine("myQ");
             Console.WriteLine("\tCount:    {0}", myQ.Count);
             Console.Write("\tValues:");
-            PrintValues(myQ);
-        }
-
-        private static void PrintValues(IEnumerable myCollection)
-        {
-            foreach (Object obj in myCollection)
+            foreach(var item in myQ)
             {
-                Console.Write("    {0}", obj);
+                Console.Write("    {0}", item);
             }
-            Console.WriteLine();
         }
     }
 }
