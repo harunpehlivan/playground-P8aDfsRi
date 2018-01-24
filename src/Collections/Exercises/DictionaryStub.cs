@@ -1,4 +1,5 @@
-﻿using System;
+﻿// { autofold
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,7 @@ namespace Collections.Exercises
 {
     public class DictionaryStub
     {
+// }
         public class Employee : IEquatable<Employee>
         {
             public int Age;
@@ -37,5 +39,7 @@ namespace Collections.Exercises
             }
             return result;
         }
+// { autofold
     }
 }
+// }
