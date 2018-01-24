@@ -1,11 +1,11 @@
-﻿using System;
+﻿// { autofold
+using System;
 using System.Collections.Generic;
-using System.Text;
-
 namespace Collections.Exercises
 {
     public class ListStub
     {
+//
         public static List<string> ProcessToKill(List<string> process)
         {
             // Create list of string with initial size to 3.
@@ -29,5 +29,7 @@ namespace Collections.Exercises
 
             return processToKill;
         }
+// { autofold
     }
 }
+//
