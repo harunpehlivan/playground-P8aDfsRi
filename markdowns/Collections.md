@@ -50,6 +50,7 @@ A stack is a collection of type **L**ast **I**n **F**irst **O**ut ("**LIFO**").
 `Stack obj = new Stack();`
 
 ```C# runnable
+// { autofold
 using System;
 using System.Collections.Generic;
 
@@ -59,6 +60,7 @@ namespace Collections.Samples
     {
         public static void Main()
         {
+// }
             // Creates and initializes a new Stack.
             Stack<string> myStack = new Stack<string>();
             myStack.Push("Hello");
@@ -72,9 +74,11 @@ namespace Collections.Samples
             {
                 Console.Write("    {0}", item);
             }
+// { autofold
         }
     }
 }
+// }
 ```
 ## Queue
 A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
@@ -84,6 +88,7 @@ A queue is a collection of type **F**irst **I**n **F**irst **O**ut ("**FIFO**").
 `Queue obj = new Queue();`
 
 ```C# runnable
+// { autofold
 using System;
 using System.Collections.Generic;
 
@@ -93,6 +98,7 @@ namespace Collections.Samples
     {
         public static void Main()
         {
+// }
             // Creates and initializes a new Queue.
             Queue<string> myQ = new Queue<string>();
             myQ.Enqueue("Hello");
@@ -106,7 +112,9 @@ namespace Collections.Samples
             {
                 Console.Write("    {0}", item);
             }
+// { autofold
         }
     }
 }
+// }
 ```
