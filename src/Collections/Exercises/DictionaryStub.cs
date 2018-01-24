@@ -30,7 +30,9 @@ namespace Collections.Exercises
         
             foreach (var e in employees)
             {
-                ///TODO: add employes to result, the key must contain age and values are names list who have the same age.
+                ///TODO: add employes to result, 
+                ///      the key must contain age and 
+                ///      values are names list who have the same age.
                 
             }
             return result;

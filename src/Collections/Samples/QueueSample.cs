@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace Collections.Samples
 {
@@ -9,25 +9,18 @@ namespace Collections.Samples
         public static void Sample()
         {
             // Creates and initializes a new Queue.
-            Queue myQ = new Queue();
+            Queue<string> myQ = new Queue<string>();
             myQ.Enqueue("Hello");
             myQ.Enqueue("World");
             myQ.Enqueue("!");
 
             // Displays the properties and values of the Queue.
-            Console.WriteLine("myQ");
             Console.WriteLine("\tCount:    {0}", myQ.Count);
             Console.Write("\tValues:");
-            PrintValues(myQ);
-        }
-
-        private static void PrintValues(IEnumerable myCollection)
-        {
-            foreach (Object obj in myCollection)
+            foreach(var item in myQ)
             {
-                Console.Write("    {0}", obj);
+                Console.Write("    {0}", item);
             }
-            Console.WriteLine();
         }
     }
 }

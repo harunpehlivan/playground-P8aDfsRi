@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace Collections.Samples
 {
@@ -8,27 +8,19 @@ namespace Collections.Samples
 
         public static void Sample()
         {
-
             // Creates and initializes a new Stack.
-            Stack myStack = new Stack();
+            Stack<string> myStack = new Stack<string>();
             myStack.Push("Hello");
             myStack.Push("World");
             myStack.Push("!");
 
             // Displays the properties and values of the Stack.
-            Console.WriteLine("myStack");
             Console.WriteLine("\tCount:    {0}", myStack.Count);
             Console.Write("\tValues:");
-            PrintValues(myStack);
-        }
-
-        private static void PrintValues(IEnumerable myCollection)
-        {
-            foreach (Object obj in myCollection)
+            foreach (var item in myStack)
             {
-                Console.Write("    {0}", obj);
+                Console.Write("    {0}", item);
             }
-            Console.WriteLine();
         }
     }
 }
