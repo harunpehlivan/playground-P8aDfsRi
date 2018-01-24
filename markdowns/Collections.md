@@ -91,7 +91,7 @@ namespace Collections.Samples
 {
     public class QueueSample
     {
-        public static void Sample()
+        public static void Main()
         {
             // Creates and initializes a new Queue.
             Queue<string> myQ = new Queue<string>();
